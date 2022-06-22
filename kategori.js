@@ -9,23 +9,21 @@ const getKonser = async () => {
   result.forEach((konser) => {
     listKonser.innerHTML += `
         
-    
-    <div class="container align-midle">
-    <div class="row">
-        <div class="card" style="width: 18rem;">
-  <img src="${konser.gambar}" class="card-img-top" alt="poster">
-  <div class="card-body">
-    <h5 class="card-title">${konser.konser}</h5>
-    <p class="card-text" style="font-size: 15px">Rp ${konser.harga},-</p>
-                <p style="font-size: 12px">Jadwal Konser ${konser.tanggal}</p>
-                <p style="font-size: 12px">Location : ${konser.kota}</p>
-                <a href="#" class="btn btn-primary bg-dark">Buy Ticket</a>
-  </div>
-</div>
-</div>
-</div>
-    
-    
+    <div class="col-md-3 col-6 mb-3">
+    <div class="card h-100 rounded-2 shadow-sm poductsCard">
+      <div class="inner">
+        <img src="${konser.gambar}" class="card-img-top"   width="200"
+        height="200" alt="paket 1" />
+      </div>
+      <div class="card-body">
+      <h5 class="card-title">${konser.konser}</h5>
+      <p class="card-text" style="font-size: 15px">Rp ${konser.harga},-</p>
+            <p style="font-size: 12px">Jadwal Konser ${konser.tanggal}</p>
+             <p style="font-size: 12px">Location : ${konser.kota}</p>
+        <a href="#" class="btn btn-primary bg-dark">Buy Ticket</a>
+      </div>
+    </div>
+    </div>
     
     
        `;
