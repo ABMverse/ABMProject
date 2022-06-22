@@ -1,0 +1,47 @@
+/* ----------------Navbar--------------------- */
+#navButton {
+    width: 100px;
+    height: 40px;
+    border: none;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: #fdba12;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  
+  #navButton:hover {
+    background-color: #f3950d;
+  }
+  
+  #navbarNavAltMarkup a {
+    color: rgb(235, 255, 250);
+  }
+  #navbarNavAltMarkup a:hover {
+    color: #f3950d;
+  }
+  
+  /* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/*  */
