@@ -69,7 +69,8 @@
                 <div class="carousel-item active">
                   <img src="gambar/jakarta-fair-kemayoran-tahun-2022.jpg" class="d-block w-100 img-fluid"
                     alt="jakarta-fair-kemayoran-tahun-2022">
-                 
+                  <div class="carousel-caption d-none d-md-block">
+                    <p>Konser Jakarta Kemayoran </p>
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -137,15 +138,16 @@
         <div id="" class="modal-body">
           <div class="row">
             <div class="col">
-              <img id="modal-image" img src="${konser.gambar}" class="w-100" alt="Poster" />
+              <img id="imgPoster" img src="" class="w-100" alt="Poster" />
             </div>
             <div class="col">
-              <p id="modal-text">${konser.konser}</p>
-              <p id="modal-text">Harga Rp. ${konser.harga},-</p>
-              <p id="modal-text">${konser.kota}</p>
+              <h4 id="konserDetail"></h4>
+              <p>Harga</p>
+              <h5 id="harga"></h5>
+              <p></p>Location</p><h5 id="kota"></h5>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Confirm</button>
+              <button type="button" class="btn btn-secondary bg-dark" data-bs-dismiss="modal">Confirm</button>
             </div>
           </div>
         </div>
@@ -159,3 +161,5 @@
     crossorigin="anonymous"></script>
   <script src="kategori.js"></script>
 </body>
+
+</html>
