@@ -40,8 +40,14 @@ const getDataModal = async (id) => {
   const result = await respons.json();
   console.log(id);
   console.log(result);
-  // const poster = localStorage.getItem(konser.gambar);
-  // const namaKonser = localStorage.getItem(konser.konser);
-  // const harga = localStorage.getItem(konser.harga);
-  // const kota = localStorage.getItem(konser.kota);
+
+  let poster = document.getElementById("imgPoster");
+  let konserDetail = document.getElementById("konserDetail");
+  let harga = document.getElementById("harga");
+  let kota = document.getElementById("kota");
+
+  poster.src = result.gambar;
+  konserDetail.innerText = result.konser;
+  harga.innerText = result.harga;
+  kota.innerText = result.kota;
 };
